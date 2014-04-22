@@ -3,7 +3,7 @@
 
   <groupId>com.test</groupId>
   <artifactId>test-api</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <packaging>jar</packaging>
 
   <properties>
@@ -23,6 +23,7 @@
       <connection>scm:git:git@github.com:aug828/test.git</connection>
       <developerConnection>scm:git:git@github.com:aug828/test.git</developerConnection>
       <url>scm:git:git@github.com:aug828/test.git/</url>
+    <tag>test-api-1.1</tag>
   </scm>
 
   <profiles>
