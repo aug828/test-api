@@ -1,46 +1,63 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.test</groupId>
-  <artifactId>test-api</artifactId>
-  <version>1.1</version>
-  <packaging>jar</packaging>
+    <groupId>com.test</groupId>
+    <artifactId>test-api</artifactId>
+    <version>1.6-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-  <scm>
-      <connection>scm:git:git@github.com:aug828/test.git</connection>
-      <developerConnection>scm:git:git@github.com:aug828/test.git</developerConnection>
-      <url>scm:git:git@github.com:aug828/test.git/</url>
-    <tag>test-api-1.1</tag>
-  </scm>
+    <scm>
+        <connection>scm:ssh://git:git@github.com/aug828/test-api.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/aug828/test-api.git</developerConnection>
+        <url>scm:git:ssh://git@github.com/aug828/test-api.git/</url>
+        <tag>HEAD</tag>
+    </scm>
 
-  <profiles>
-      <profile>
-          <id>nexus</id>
-          <activation>
-              <activeByDefault>true</activeByDefault>
-          </activation>
-          <repositories>
-              <repository>
-                  <id>TEST</id>
-                  <name>TEST Maven Repository</name>
-                  <url>http://localhost:8080/nexus/content/groups/public</url>
-                  <releases><enabled>true</enabled></releases>
-                  <snapshots><enabled>true</enabled></snapshots>
-              </repository>
-          </repositories>
-      </profile>
-  </profiles>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>InternalSnapshots</id>
+            <name>Internal Snapshots</name>
+            <url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>InternalReleases</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8080/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <!--
+    <profiles>
+        <profile>
+            <id>nexus</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>TEST</id>
+                    <name>TEST Maven Repository</name>
+                    <url>http://localhost:8080/nexus/content/groups/public</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>true</enabled></snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    -->
 </project>
