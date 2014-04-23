@@ -3,7 +3,7 @@
 
     <groupId>com.test</groupId>
     <artifactId>test-api</artifactId>
-    <version>1.8-SNAPSHOT</version>
+    <version>1.9-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -27,35 +27,15 @@
     </scm>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>InternalSnapshots</id>
-            <name>Internal Snapshots</name>
-            <url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
         <repository>
             <id>InternalReleases</id>
             <name>Internal Releases</name>
             <url>http://localhost:8080/nexus/content/repositories/releases/</url>
         </repository>
+        <snapshotRepository>
+            <id>InternalSnapshots</id>
+            <name>Internal Snapshots</name>
+            <url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
     </distributionManagement>
-
-    <!--
-    <profiles>
-        <profile>
-            <id>nexus</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <repositories>
-                <repository>
-                    <id>TEST</id>
-                    <name>TEST Maven Repository</name>
-                    <url>http://localhost:8080/nexus/content/groups/public</url>
-                    <releases><enabled>true</enabled></releases>
-                    <snapshots><enabled>true</enabled></snapshots>
-                </repository>
-            </repositories>
-        </profile>
-    </profiles>
-    -->
 </project>
