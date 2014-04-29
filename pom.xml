@@ -3,7 +3,7 @@
 
     <groupId>com.test</groupId>
     <artifactId>test-api</artifactId>
-    <version>1.12.32</version>
+    <version>1.12.35-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -28,7 +28,7 @@
         <connection>scm:ssh://git:git@github.com/aug828/test-api.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/aug828/test-api.git</developerConnection>
         <url>scm:git:ssh://git@github.com/aug828/test-api.git/</url>
-        <tag>test-api-1.12.32</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
