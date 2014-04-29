@@ -3,6 +3,6 @@
 
     <groupId>com.test</groupId>
     <artifactId>base</artifactId>
-    <version>1.12.32-SNAPSHOT</version>
+    <version>1.12.32</version>
     <packaging>jar</packaging>
 </project>
