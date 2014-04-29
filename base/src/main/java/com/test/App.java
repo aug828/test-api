@@ -1,4 +1,4 @@
-package com.test;
+package main.java.com.test;
 
 /**
  * Hello world!

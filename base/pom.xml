@@ -8,7 +8,6 @@
 
     <modules>
         <module>scripts</module>
-        <module>base</module>
     </modules>
 
     <properties>
