@@ -2,44 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.test</groupId>
-    <artifactId>test-api</artifactId>
+    <artifactId>base</artifactId>
     <version>1.12.32-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>scripts</module>
-    </modules>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
-    <scm>
-        <connection>scm:ssh://git:git@github.com/aug828/test-api.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/aug828/test-api.git</developerConnection>
-        <url>scm:git:ssh://git@github.com/aug828/test-api.git/</url>
-        <tag>HEAD</tag>
-    </scm>
-
-    <distributionManagement>
-        <repository>
-            <id>InternalReleases</id>
-            <name>Internal Releases</name>
-            <url>http://localhost:8080/nexus/content/repositories/releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>InternalSnapshots</id>
-            <name>Internal Snapshots</name>
-            <url>http://localhost:8080/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+    <packaging>jar</packaging>
 </project>
